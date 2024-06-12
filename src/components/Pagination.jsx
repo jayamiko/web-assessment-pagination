@@ -1,5 +1,5 @@
 import React from 'react';
-import data from '../data/data';
+import { products } from '../data/data';
 import Button from './Button';
 
 export const Pagination = () => {
@@ -9,7 +9,7 @@ export const Pagination = () => {
       <Button name="prev" styles="prevbtn">
         Prev
       </Button>
-      {data.map((x, i) => {
+      {products.map((x, i) => {
         return (
           <Button key={i} name={x.name}>
             {x.id}

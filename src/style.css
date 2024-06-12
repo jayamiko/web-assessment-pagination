@@ -26,16 +26,18 @@ p {
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .title {
   position: absolute;
-  width: 100%;
+  width: 80%;
   color: azure;
   text-align: center;
   margin: 0%;
   text-shadow: 1px 1px #000;
   z-index: 1;
+  font-size: 18px;
 }
 
 img {
@@ -46,10 +48,41 @@ img {
   filter: brightness(80%);
 }
 
-.description {
+.box_info {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+
+.box_label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box_label .price {
+  font-size: 16px;
+  font-weight: 800;
+  color: darkslateblue;
+}
+
+.box_label .release_date {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.box_info .storage {
+  font-size: 12px;
+  margin-top: 2px;
+  font-weight: 600;
+  color: maroon;
+}
+
+.box_info .description {
   font-size: 10px;
   font-style: italic;
+  text-align: justify;
   padding: 4px;
+  margin: 0;
 }
 
 .pagination {

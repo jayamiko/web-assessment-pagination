@@ -1,20 +1,25 @@
 import React from 'react';
 import data from '../data/data';
+import Button from './Button';
 
 export const Pagination = () => {
   return (
     <div className="pagination">
-      <button name="start">{'<<'}</button>
-      <button name="prev" className="prevbtn">
+      <Button name="start">{'<<'}</Button>
+      <Button name="prev" styles="prevbtn">
         Prev
-      </button>
+      </Button>
       {data.map((x, i) => {
-        return <button key={i}>{x.id}</button>;
+        return (
+          <Button key={i} name={x.name}>
+            {x.id}
+          </Button>
+        );
       })}
-      <button name="next" className="nextbtn">
+      <Button name="next" styles="nextbtn">
         Next
-      </button>
-      <button name="end">{'>>'}</button>
+      </Button>
+      <Button name="end">{'>>'}</Button>
     </div>
   );
 };

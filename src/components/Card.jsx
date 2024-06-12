@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Card = ({ data }) => {
+export const Card = () => {
   return (
     <div className="card">
       <div className="thumbnail">

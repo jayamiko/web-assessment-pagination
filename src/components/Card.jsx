@@ -14,7 +14,7 @@ export const Card = () => {
         </div>
         <div className="box_label">
           <label className="price">Rp. [price]</label>
-          <span className="storage">[storage]</span>
+          <span className="storage">[storage] GB</span>
         </div>
         <p className="description">[description]</p>
       </div>

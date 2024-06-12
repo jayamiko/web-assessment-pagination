@@ -1,21 +1,22 @@
 import React from 'react';
 
-export const Card = ({ data }) => {
+export const Card = () => {
   return (
     <div className="card">
       <div className="thumbnail">
-        <h2 className="title">{data.name}</h2>
-        <img src={data.image.url} />
+        <h2 className="title">[product_name]</h2>
+        <img src={null} />
       </div>
       <div className="box_info">
         <div className="box_label">
-          <label className="price">Rp. {data.price}</label>
-          <label className="release_date">
-            {data.sold} Sold | {data.stock} Stock
-          </label>
+          <span className="brand">[brand_name]</span>
+          <label className="brand">[sold] Sold | [stock] Stock</label>
         </div>
-        <span className="storage">{data.storage}</span>
-        <p className="description">{data.description}</p>
+        <div className="box_label">
+          <label className="price">Rp. [price]</label>
+          <span className="storage">[storage]</span>
+        </div>
+        <p className="description">[description]</p>
       </div>
     </div>
   );
